@@ -1,0 +1,136 @@
+                            /* Groups & Items  */
+                            
+                            .group {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            
+                            .wrapper {
+                                width: 100%;
+                            }
+                            
+                            .item {
+                                flex: 1;
+                                margin: 5px;
+                            }
+                            
+                            @media all and (min-width: 700px) {
+                                .group {
+                                    flex-direction: row;
+                                }
+                                .wrapper {
+                                    width: 90%;
+                                    margin: auto;
+                                }
+                            }
+                            /* Styling */
+                            
+                            body {
+                                margin: 0;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                background-color: #4F5D75;
+                            }
+                            
+                            img {
+                                width: 100%;
+                            }
+                            
+                            img.rounded {
+                                border-radius: 15px;
+                            }
+                            
+                            main p {
+                                font-size: 18px;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            }
+                            
+                            main h2 {
+                                font-size: 30px;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 300;
+                            }
+                            
+                            main h3 {
+                                font-size: 24px;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 300;
+                            }
+                            
+                            .align-center {
+                                text-align: center;
+                            }
+                            /* Header*/
+                            
+                            header {
+                                background-color: #BFC0C0;
+                                margin-bottom: 20px;
+                                display: block;
+                            }
+                            
+                            header h1 {
+                                font-size: 40px;
+                                font-family: Helvetica, Geneva, Tahoma, sans-serif;
+                                color: #2D3142;
+                                font: 400;
+                                text-align: center;
+                            }
+                            /* Articles */
+                            
+                            #Home,
+                            #Portfolio,
+                            #Contact {
+                                margin-bottom: 120px;
+                            }
+                            
+                            #About-Me {
+                                background-color: #BFC0C0;
+                                padding: 20px 0 30px 0;
+                                margin: 120px 0;
+                                color: #2D3142;
+                            }
+                            /* Main */
+                            
+                            main {
+                                padding-left: 10px;
+                                margin-bottom: 0;
+                            }
+                            /*Buttons*/
+                            
+                            .btn {
+                                display: inline-block;
+                                font-family: "Time", "sans-serif";
+                                font-size: 16px;
+                                text-align: center;
+                                text-decoration: none;
+                                margin: 10px;
+                                padding: 6px 12px;
+                                border-radius: 6px;
+                            }
+                            
+                            .btn-default {
+                                color: #F5F5F5;
+                                background-color: #EF8354;
+                                border: 3px solid #737981;
+                            }
+                            
+                            a {
+                                font-size: 16px;
+                                font-family: "Verdana", "sans-serif";
+                            }
+                            
+                            a:link {
+                                color: #FFFFFF;
+                            }
+                            
+                            a:visited {
+                                color: #4F5D75;
+                            }
+                            
+                            a:hover {
+                                color: #2D3142;
+                            }
+                            
+                            a:active {
+                                color: #4F7ABA;
+                            }
+                            /* Intro */
