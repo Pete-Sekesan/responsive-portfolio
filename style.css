@@ -19,7 +19,7 @@
                             margin: 40px;
                         }
                         
-                        @media all and (min-width: 600px) {
+                        @media all and (min-width: 800px) {
                             .group {
                                 flex-direction: row;
                             }
@@ -41,6 +41,10 @@
                             }
                             header nav ul li a:hover {
                                 color: #bdbdbd;
+                            }
+                            #Contact ul {
+                                margin-left: 10px;
+                                padding-top: 40px;
                             }
                         }
                         /* Styling */
@@ -219,6 +223,7 @@
                         }
                         
                         #Contact ul {
+                            display: flex;
                             list-style: none;
                             margin-top: 50px;
                         }
