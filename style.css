@@ -1,136 +1,224 @@
-                            /* Groups & Items  */
-                            
+                        /* Groups & Items  */
+                        
+                        .group {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        
+                        .wrapper {
+                            width: 100%;
+                        }
+                        
+                        .item {
+                            flex: 1;
+                            margin: 40px;
+                        }
+                        
+                        .item-double {
+                            flex: 2;
+                            margin: 40px;
+                        }
+                        
+                        @media all and (min-width: 600px) {
                             .group {
-                                display: flex;
-                                flex-direction: column;
+                                flex-direction: row;
                             }
-                            
                             .wrapper {
-                                width: 100%;
+                                width: 80%;
+                                margin: auto;
                             }
-                            
-                            .item {
-                                flex: 1;
-                                margin: 5px;
-                            }
-                            
-                            @media all and (min-width: 700px) {
-                                .group {
-                                    flex-direction: row;
-                                }
-                                .wrapper {
-                                    width: 80%;
-                                    margin: auto;
-                                }
-                            }
-                            /* Styling */
-                            
-                            body {
-                                margin: 0;
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                background-color: #4F5D75;
-                            }
-                            
-                            img {
-                                width: 100%;
-                            }
-                            
-                            img.rounded {
-                                border-radius: 15px;
-                            }
-                            
-                            main p {
-                                font-size: 18px;
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            }
-                            
-                            main h2 {
-                                font-size: 30px;
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                font-weight: 300;
-                            }
-                            
-                            main h3 {
-                                font-size: 24px;
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                font-weight: 300;
-                            }
-                            
-                            .align-center {
-                                text-align: center;
-                            }
-                            /* Header*/
-                            
                             header {
-                                background-color: #BFC0C0;
-                                margin-bottom: 20px;
-                                display: block;
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 0 30px;
                             }
-                            
                             header h1 {
-                                font-size: 40px;
-                                font-family: Helvetica, Geneva, Tahoma, sans-serif;
-                                color: #2D3142;
-                                font: 400;
-                                text-align: center;
+                                margin: 14px 0;
+                                padding-top: 0;
                             }
-                            /* Articles */
-                            
-                            #Home,
-                            #Portfolio,
-                            #Contact {
-                                margin-bottom: 120px;
+                            header nav {
+                                margin-top: 8px;
                             }
-                            
-                            #About-Me {
-                                background-color: #BFC0C0;
-                                padding: 20px 0 20px 0;
-                                margin: 120px 0;
-                                color: #2D3142;
+                            header nav ul li a:hover {
+                                color: #bdbdbd;
                             }
-                            /* Main */
-                            
-                            main {
-                                margin-bottom: 0;
-                                padding-left: 10;
-                                padding-right: 10;
-                            }
-                            /*Buttons*/
-                            
-                            .btn {
-                                display: inline-block;
-                                font-family: "Time", "sans-serif";
-                                font-size: 16px;
-                                text-align: center;
-                                text-decoration: none;
-                                margin: 10px;
-                                padding: 6px 12px;
-                                border-radius: 6px;
-                            }
-                            
-                            .btn-default {
-                                color: #F5F5F5;
-                                background-color: #EF8354;
-                                border: 3px solid #737981;
-                            }
-                            
-                            a {
-                                font-size: 16px;
-                                font-family: "Verdana", "sans-serif";
-                            }
-                            
-                            a:link {
-                                color: #FFFFFF;
-                            }
-                            
-                            a:visited {
-                                color: #4F5D75;
-                            }
-                            
-                            a:hover {
-                                color: #2D3142;
-                            }
-                            
-                            a:active {
-                                color: #4F7ABA;
-                            }
+                        }
+                        /* Styling */
+                        
+                        body {
+                            margin: 0;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            background-color: #284B63;
+                        }
+                        
+                        img {
+                            width: 100%;
+                        }
+                        
+                        img.rounded {
+                            border-radius: 15px;
+                        }
+                        
+                        main p {
+                            font-size: 18px;
+                            color: #d9d9d9;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        }
+                        
+                        main h2 {
+                            font-size: 30px;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            font-weight: 300;
+                            color: #ffffff;
+                        }
+                        
+                        main h3 {
+                            font-size: 24px;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            font-weight: 300;
+                            color: #ffffff;
+                        }
+                        
+                        .align-center {
+                            text-align: center;
+                        }
+                        /* Header*/
+                        
+                        header {
+                            background-color: #D9D9D9;
+                            margin-bottom: 20px;
+                            display: block;
+                        }
+                        
+                        header h1 {
+                            font-size: 40px;
+                            font-family: Helvetica, Geneva, Tahoma, sans-serif;
+                            color: #3C6E71;
+                            font: 400;
+                            text-align: center;
+                        }
+                        
+                        header nav {
+                            display: flex;
+                            justify-content: center;
+                        }
+                        
+                        header nav ul {
+                            display: flex;
+                            padding-left: 0;
+                            list-style: none;
+                            margin: 0;
+                        }
+                        
+                        header nav ul li a {
+                            color: #fff;
+                            text-decoration: none;
+                            margin: 0 20px 0 0;
+                        }
+                        /* Articles */
+                        
+                        #Home,
+                        #Portfolio,
+                        #Contact {
+                            margin-bottom: 80px;
+                        }
+                        
+                        #About-Me {
+                            background-color: #353535;
+                            padding: 20px 0 20px 0;
+                            margin: 120px 0;
+                            color: #ffffff;
+                        }
+                        
+                        #About-Me h2 {
+                            padding-left: 40px;
+                            margin-bottom: 10px;
+                        }
+                        
+                        #Portfolio h3 {
+                            padding-left: 40px;
+                            font-size: 30px;
+                        }
+                        
+                        #Portfolio h4 {
+                            font-size: 20px;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            font-weight: 300;
+                            color: #ffffff;
+                        }
+                        /* Main */
+                        
+                        main {
+                            margin-bottom: 0;
+                            padding-left: 10;
+                            padding-right: 10;
+                        }
+                        /*Buttons*/
+                        
+                        .btn {
+                            display: inline-block;
+                            font-family: "Time", "sans-serif";
+                            font-size: 16px;
+                            text-align: center;
+                            text-decoration: none;
+                            margin: 10px;
+                            padding: 6px 12px;
+                            border-radius: 6px;
+                        }
+                        
+                        .btn-default {
+                            color: #3C6E71;
+                            background-color: #D9D9D9;
+                            border: 3px solid #3C6E71;
+                        }
+                        
+                        a {
+                            font-size: 16px;
+                            font-family: "Verdana", "sans-serif";
+                        }
+                        
+                        a:link {
+                            color: #3C6E71;
+                        }
+                        
+                        a:visited {
+                            color: #4F5D75;
+                        }
+                        
+                        a:hover {
+                            color: #2D3142;
+                        }
+                        
+                        a:active {
+                            color: #4F7ABA;
+                        }
+                        /* Contact */
+                        
+                        form label {
+                            display: block;
+                            font-size: 20px;
+                            margin-bottom: 8px;
+                            color: #ffffff;
+                            font-family: 'Times New Roman', Times, serif;
+                            width: 100%;
+                        }
+                        
+                        form input[type=text] {
+                            color: #000000;
+                            font-size: 16px;
+                            margin-bottom: 10px;
+                            width: 100%;
+                        }
+                        
+                        form textarea {
+                            height: 4.75rem;
+                            width: 100%;
+                            color: #000;
+                            font-size: 16px;
+                            margin-bottom: 10px;
+                        }
+                        
+                        #Contact ul {
+                            list-style: none;
+                            margin-top: 50px;
+                        }
